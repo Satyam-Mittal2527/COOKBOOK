@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            background-color: lightgray;
+        }
+        .container{
+            background-color: black;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            padding: 20px 20px 20px 20px;
+            width: 400px;
+            border-radius: 20px;   
+            text-align: center;
+        }
+        #login{
+            background-color: black;
+            color: white;
+            text-align: center;
+            font-size: xx-large;
+        }
+        form{
+            background-color: black;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            align-self: center;
+            align-items: center;
+        }
+        input{
+            width: 270px;
+            height: 30px;
+            border-radius: 20px;
+        }
+        .cont{
+            display: flex;
+            justify-content: center;
+            margin-top: 15%;
+        }
+        a{
+            border-radius: 20px;
+            width: 100px;
+        }
+    </style>
+</head>
+<body>
+    <div class="cont">
+        <div class="container">
+            <div id="login">REGISTER</div>
+            <form action="/register" method="POST">
+                <input type="text" name="username" placeholder="Username" required>
+                <input type="text" name="email_id" placeholder="Email Id" required>
+                <input type="password" name="password" placeholder="Passoword" required>
+                <input type="password" name="password" placeholder="Confirm Password" required>
+                <a href="/register" onclick="test()">Submit</a>
+            </form>
+        </div>
+    </div>
+    <script type="text/javascript">
+        function test(){
+            if(document.getElementsByName("password").value != document.getElementsByName("Confirm Password").value){
+                alert("Password and Confirm Password should be same");
+            }
+        }
+    </script>
+</body>
+</html>

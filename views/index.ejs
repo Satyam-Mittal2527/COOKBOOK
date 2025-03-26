@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cook Book</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <div class="container">
+        <a href="/logo">
+            <img src="/assets/logo.jpg" class="logo">
+        </a>
+        <div class="menu">MENU
+            <div class="dropdown">
+                <a href="/html/Western.html" target="_blank">Western Cusine</a>
+                <a href="/html/thai.html" target="_blank">South-East-Asian cusine</a>
+                <a href="/html/nepali.html" target="_blank">Nepali cusine</a>
+               
+            </div>
+        </div>
+        <!-- <div class="menu">CONTACT
+            <div class="dropdown">
+                <a link="#">Link1</a>
+                <a link="#">Link2</a>
+            </div> 
+        </div> -->
+        <div class="menu">PROFILE
+            <div class="dropdown">
+                <a href="/html/aboutus.html">About Us</a>
+                <a href="/html/develop.html">Developer</a>
+            </div> 
+        </div>
+        <div class="menu">
+            <form style="background-color:#9E4244;">
+            <%if(locals.user){%>
+                <div class="sign-in">Welcome!<%=user%></div>
+                <div class="dropdown">
+                    <a href="/html/aboutus.html">Your Profile</a>
+                    <a href="/breakfast">Your Kitchen</a>
+                </div>
+            <%}else{%>
+                <a href="/register"><div class="sign-in" style="width: 120px;">Sign-in/register</div></a>
+            <%}%>
+            </form>
+        </div>
+        
+    </div>
+    <div class="pic">
+        <img src="/assets/chef.jpg" class="FoodTime chef">
+    </div>
+    
+    <div class="paragraph">
+        <div class="timer">
+            <div class="timer_message">The Countdown has begun grab your offer now</div>
+            <div class="time">
+        <span id="hour">1</span>:<span id="minutes">60</span>:<span id="seconds">60</span></div>
+        </div>
+        <p>&#129346 &#129346 Get the Amazing Offer with 10% Discount of all the dishes. Order now and get the best taste of food.&#129346 &#129346</p>
+    </div>
+    <div class="main_body">
+        <a href="/breakfast" style="text-decoration: none;"><div class="bf main">Breakfast <img src="/assets/div_bf.jpg" id="div_img"></div></a>
+        <a href="/lunch" style="text-decoration: none;"><div class="lunch main">Lunch<img src="/assets/div_lunch.jpg" id="div_img"></div></a>
+        <a href="/dinner" style="text-decoration: none;"><div class="dinner main">Dinner<img src="/assets/div_dinner.jpg" id="div_img"></div></a>
+    </div>
+    <h2 style="font-size: x-large; font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;">TRENDING NOW</h2>
+    <div class="Trending">
+            <div id="content_trending">
+                <div id="content_text">Nacho chicken salad<br>
+                    <div id="price">Price: 200<br>
+                        ~Special Offer Discount~<br>
+                        Discount:10%<br>
+                        Final Price: 180<br>
+                        <button><a href="/html/nacho_salad.html" style="text-decoration: none; color: black;" onclick="alert('Payment Successfull')">Pay Here</a></button>
+                    </div>
+                </div>
+                <img src="/assets/Nacho chicken salad.jpg" id="content_img">
+            </div>
+        <div id="content_trending">
+            <div id="content_text">Chicken Fajita
+                <div id="price">Price: 150<br>
+                    ~Special Offer Discount~<br>
+                    Discount:10%<br>
+                    Final Price: 135<br>
+                    <button><a href="/html/fajitas.html" style="text-decoration: none; color: black;" onclick="alert('Payment Successfull')">Pay Here</a></button>
+                </div>
+            </div>
+            <img src="/assets/Chicken Fajita.jpg" id="content_img">
+        </div>
+        <div id="content_trending">
+                <div id="content_text">Pumpkin bean spicy
+                    <div id="price">Price: 100<br>
+                        ~Special Offer Discount~<br>
+                        Discount:10%<br>
+                        Final Price:90<br>
+                        <button><a href="/html/pumpkin_bean_spicy.html" style="text-decoration: none; color: black;" onclick="alert('Payment Successfull')">Pay Here</a></button>
+                    </div>
+                </div>
+                <img src="/assets/Pumpkin bean spicy.jpg" id="content_img"></div></a>
+        <div id="content_trending">
+                <div id="content_text">Shashlik with Green Vegetables
+                    <div id="price">Price: 150<br>
+                        ~Special Offer Discount~<br>
+                        Discount:10%<br>
+                        Final Price: 135<br>
+                        <button><a href="/html/sashlik.html" style="text-decoration: none; color: black;" onclick="alert('Payment Successfull')">Pay Here</a></button>
+                    </div>
+                </div>
+                <img src="/assets/Shashlik with Green Vegetables.jpg" id="content_img">
+        </div>
+    </div>
+    <div class="waffles">
+        <a href="/html/chocwaff.html"><img src="/assets/waffles.jpg" id="waffles_img"></a>
+        <div id="waffles_text">
+            <div style="width: 100%;font-size: x-large; font-weight: bolder;">Waffles Center</div>
+            <div style="width: 100%;margin-top: 10px;">Indulge in the perfect bite of happiness! Our chocolate waffles are crispy on the outside, soft and fluffy inside, and drizzled with rich, velvety chocolate syrup. 
+            Topped with a scoop of creamy vanilla ice cream and fresh berries, every bite melts in your mouth. Treat yourself.You deserve it! 🧇🧇</div>
+        </div>
+    </div>
+    <div class="brekage"></div>
+    <h2 style="font-size: x-large; font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;">FAST FOOD</h2>
+    <div class="fast_food">
+        <div id="content_fast_food"><a href="/html/burger.html"><img src="/assets/burger.jpg" id="content_fast_food_img"></a><div id="content_fast_food_text">BURGER</div></div>
+        <div id="content_fast_food"><a href="/html/chicken_nuggets.html"><img src="/assets/Chicken_Nuggets.jpg" id="content_fast_food_img"></a><div id="content_fast_food_text">CHICKEN NUGGETS</div></div>
+        <div id="content_fast_food"><a href="/html/grilled_sandwich.html"><img src="/assets/grilled_sandwich .jpg" id="content_fast_food_img"></a><div id="content_fast_food_text">GRILLED SANDWICH</div></div>
+        <div id="content_fast_food"><a href="/html/hotdog.html"><img src="/assets/hot_dog.jpg" id="content_fast_food_img"></a>/<div id="content_fast_food_text">HOT DOG</div></div>
+        <div id="content_fast_food"><a href="/html/mozzerella.html"><img src="/assets/mozarella_sticks.jpg" id="content_fast_food_img"></a><div id="content_fast_food_text">MOZARELLA STICKS</div></div>
+        <div id="content_fast_food"><a href="/html/onion_rings.html"><img src="/assets/onion_rings.jpg" id="content_fast_food_img"></a><div id="content_fast_food_text">ONION RINGS</div></div>
+    </div>
+    <div class="brekage"></div>
+    <h2 style="font-size: x-large; font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;">FAN FAVORITES</h2>
+    <div class="favorites">
+        <div id="content_favorites"><a href="/html/ribs.html"><img src="/assets/oven_baked_ribs.jpg" id="content_favorites_img"></a><div id="content_favorites_text">OVEN BAKED RIBS</div></div>
+        <div id="content_favorites"><a href="/html/fajitas.html"><img src="/assets/fajitas.jpg" id="content_favorites_img"></a><div id="content_favorites_text">FAJITAS</div></div>
+        <div id="content_favorites"><a href="/html/open_momo.html"><img src="/assets/open_momo.jpg" id="content_favorites_img"></a><div id="content_favorites_text">OPEN MOMO</div></div>
+        <div id="content_favorites"><a href="/html/shashuka.html"><img src="/assets/sakshukha.jpg" id="content_favorites_img"></a><div id="content_favorites_text">SHASHUKA</div></div>
+        <div id="content_favorites"><a href="/html/steak.html"><img src="/assets/broiled_steak .jpg" id="content_favorites_img"></a><div id="content_favorites_text">BROILED STEAK</div></div>
+        <div id="content_favorites"><a href="/html/chicken_wings.html"><img src="/assets/chicken_wings.jpg" id="content_favorites_img"></a><div id="content_favorites_text">CHICKEN WINGS</div></div>
+        <div id="content_favorites"><a href="/html/cutlet.html"><img src="/assets/fry_cutlet.jpg" id="content_favorites_img"></a><div id="content_favorites_text">FRY CUTLET</div></div>
+        <div id="content_favorites"><a href="/html/fries.html"><img src="/assets/Peri_peri_french_fries.jpg" id="content_favorites_img"></a><div id="content_favorites_text">PERI PERI FRENCH FREIS</div></div>
+        <div id="content_favorites"><a href="/html/skewers.html"><img src="/assets/Chicken_skewers.jpg" id="content_favorites_img"></a><div id="content_favorites_text">CHICKEN SKEWERS</div></div>
+        <div id="content_favorites"><a href="/html/cheeze_pizza.html"><img src="/assets/cheese_pizza.jpg" id="content_favorites_img"></a><div id="content_favorites_text">CHEESE PIZZA</div></div>
+        <div id="content_favorites"><a href="/html/pad_thai.html"><img src="/assets/Pad_thai_noddles.jpg" id="content_favorites_img"></a><div id="content_favorites_text">PAD THAI NODDLES</div></div>
+        <div id="content_favorites"><a href="/html/mushroom.html"><img src="/assets/Sauteed_mashroom.jpg" id="content_favorites_img"></a><div id="content_favorites_text">SAUTEED MASHROOM</div></div>
+        <div id="content_favorites"><a href="/html/mexican.html"><img src="/assets/Spicy_mexican.jpg" id="content_favorites_img"></a><div id="content_favorites_text">SPICY MEXICAN</div></div>
+        <div id="content_favorites"><a href="/html/red_curry.html"><img src="/assets/Chicken_red_curry.jpg" id="content_favorites_img"></a><div id="content_favorites_text">CHICKEN RED CURRY</div></div>
+        <div id="content_favorites"><a href="/html/stew.html"><img src="/assets/Goulash_stew.jpg" id="content_favorites_img"></a><div id="content_favorites_text">GOULASH STEW</div></div>
+        <div id="content_favorites"><a href="/html/meat_sabj.html"><img src="/assets/Meat_sabj_Vegetables.jpg" id="content_favorites_img"></a><div id="content_favorites_text">MEAT SABJ VEGETABLES</div></div>
+    </div>
+    <div class="brekage"></div>
+        <div class="review">
+            <h3>KINDLY SHARE A REVIEW</h3>
+            <div class="rating">
+                <input type="radio" id="star5" name="rating" value="5" />
+                <label class="star" for="star5">★</label>
+                <input type="radio" id="star4" name="rating" value="4" />
+                <label class="star" for="star4">★</label>
+                <input type="radio" id="star3" name="rating" value="3" />
+                <label class="star" for="star3">★</label>
+                <input type="radio" id="star2" name="rating" value="2" />
+                <label class="star" for="star2">★</label>
+                <input type="radio" id="star1" name="rating" value="1" />
+                <label class="star" for="star1">★</label>
+            </div>
+            <form action="/review" method="POST">
+                <input type="text" name="review" placeholder="Give your review" style="width: 30%; height: 30px; border-radius: 20px;">
+                <input type="submit" style="background-color: black; color: white; width: 70px; height: 30px; border-radius: 10px;" onclick="alert('Thank-you for your valuable review')">
+            </form>
+        </div>
+    <footer>
+        <div class="footer">
+            <a href="#" class="fa fa-facebook social_media" style="display: block; background-color: black; color: aliceblue;"> CookBook</a>
+            <a href="#" class="fa fa-linkedin social_media" style="display: block; background-color: black; color: aliceblue;"> CookBook</a>
+            <a href="#" class="fa fa-pinterest social_media" style="display: block; background-color: black; color: aliceblue;"> CookBook</a>
+            <a href="#" class="fa fa-reddit social_media" style="display: block; background-color: black; color: aliceblue;"> CookBook</a>
+            <div id="tm">@2025,All Rights Reserverd &#8482 </div>
+        </div>
+    </footer>
+    <script type="text/javascript">
+        let hour=1;
+        let minutes = 59;
+        let seconds=59;
+        function timer(){
+            seconds--;
+            if(seconds<0){
+                seconds=59;
+                minutes--;
+            }
+            if(minutes<0){
+                minutes=59;
+                hour--;
+            }
+            if(hour<0){
+                hour=0;
+                minutes=0;
+                seconds=0;
+                document.querySelector("#hour").textContent = hour;
+                document.querySelector("#minutes").textContent = minutes;
+                document.querySelector("#seconds").textContent = seconds;
+                document.querySelector(".timer_message").textContent="Time's UP"
+                clearInterval(intervalId);
+                return;
+            }
+            document.querySelector("#hour").textContent = hour;
+            document.querySelector("#minutes").textContent = minutes;
+            document.querySelector("#seconds").textContent = seconds;
+        }
+        let intervalId=setInterval(timer,1000);
+    </script>
+</body>
+</html>

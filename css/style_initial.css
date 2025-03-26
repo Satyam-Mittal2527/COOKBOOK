@@ -1,0 +1,81 @@
+* {
+    background-image: url("/assets/background.jpg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+.logo {
+    width: 250px;
+    height: 150px;
+    background-image: none;
+    position: fixed;
+    top: 50px;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: none;
+}
+
+.continue {
+    font-family: cursive;
+    font-size: 20px;
+    background-image: none;
+    background-color:#9E4244;
+    width: 200px;
+    height: 50px;
+    position: absolute;
+    top: 600px;
+    left: 20px;
+}
+
+.container {
+    max-width: 50vw; /* Prevent text from going outside the window */
+    white-space: normal; /* Allow text to wrap */
+    word-wrap: break-word; /* Ensure long words break properly */
+    overflow: hidden;
+    background-image: none;
+}
+
+.typewriter {
+    margin-top: 200px;
+    font-size: 24px;
+    margin-right: 100px;
+    font-weight: bold;
+    border-right: 2px solid black; /* Cursor effect */
+    padding-right: 5px;
+    display: inline-block;
+    background-image: none;
+    color: white;
+    background-image: none;
+}
+
+form {
+    background-image: none;
+}
+
+input:hover {
+    background-color: #A1E3F9;
+}
+
+@keyframes spanInOut {
+    0% {
+        opacity: 0;
+        transform: scale(0.5);
+    }
+    50% {
+        opacity: 1;
+        transform: scale(1.1);
+    }
+    100% {
+        opacity: 0;
+        transform: scale(0.5);
+    }
+}
+
+.animated-offer {
+    animation: spanInOut 3s ease-in-out infinite;
+}

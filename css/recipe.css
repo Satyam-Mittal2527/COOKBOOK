@@ -1,0 +1,97 @@
+body {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-image: url("/assets/neprecipebg.png");
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+.container{
+    filter: blur(4px);
+}
+.checkout{
+    width: 500px;
+    height: 500px;
+    background-color: black;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    top: 210px;
+    border-radius: 20px;
+    gap: 20px;
+    text-align: center;
+    
+    align-items: center;
+}
+#payment_method{
+    background-color: white;
+    color: black;
+    width: 90%;
+    height: 10%;
+    font-size: large;
+    border-radius: 20px;
+}
+#payment{
+    background-color: gray;
+    box-shadow: 0px 0px 7px 1px gray;
+    width: 70%;
+    height: 70%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+.ins {
+    background-color: rgb(220, 220, 200);
+    padding: 50px;
+    border-radius: 7px;
+
+}
+
+h1, h2 {
+    color: #333;
+    text-align: center;
+}
+
+h1 {
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+    text-decoration: underline;
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+h2 {
+    color: #d45940;
+    font-size: 35px;
+    text-decoration:double;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin-bottom: 20px;
+}
+
+li {
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: #4f4f4f;
+}
+
+.section {
+    margin-bottom: 20px;
+    background-color: #fff0e1;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.section ul li::before {
+    content: "✓";
+    color: #d45940;
+    font-size: 20px;
+    margin-right: 8px;
+}
